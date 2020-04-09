@@ -1,0 +1,5 @@
+@import './App.css';
+
+.quickFacts {
+  background-color: var(--electromagnet);
+}

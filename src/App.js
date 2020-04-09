@@ -5,22 +5,27 @@ import Awareness from './components/Awareness'
 import Header from './components/Header'
 import QuuickFacts from './components/QuickFacts'
 
-import './App.css'
+import './style.css'
 
 const Main = () => (
-  <Fragment>
+  <div className="col-8 row">
     <Awareness />
     <Assessemnt />
-  </Fragment>
+  </div>
 )
 
 function App() {
   return (
     <Fragment className="App">
-      <Header />
-      <QuuickFacts />
-      <Awareness />
-      <Assessemnt />
+      <Header
+        className="navbar"
+        role="navigation"
+        aria-label="main navigation"
+      />
+      <main className="row wide">
+        <QuuickFacts />
+        <Main />
+      </main>
     </Fragment>
   )
 }

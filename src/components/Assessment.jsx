@@ -1,3 +1,3 @@
 import React from 'react'
 
-export default () => <div>assessment content goes here</div>
+export default () => <div className="col-6">assessment content goes here</div>
