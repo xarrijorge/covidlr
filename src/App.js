@@ -3,7 +3,6 @@ import React, { Fragment } from 'react'
 import Assessemnt from './components/Assessment'
 import Awareness from './components/Awareness'
 import Header from './components/Header'
-import QuuickFacts from './components/QuickFacts'
 import Faq from './components/Faq'
 
 import 'materialize-css' // It installs the JS asset only
@@ -12,21 +11,16 @@ import './style.css'
 
 function App() {
   return (
-    <Fragment className="App">
-      <Header
-        className="navbar"
-        role="navigation"
-        aria-label="main navigation"
-      />
+    <div className="App">
+      <Header />
       <main className="main">
-        <QuuickFacts />
         <hr />
         <div className="subMain">
           <Awareness />
           <Faq />
         </div>
       </main>
-    </Fragment>
+    </div>
   )
 }
 

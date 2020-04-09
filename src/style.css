@@ -1,6 +1,42 @@
 body {
   background-color: #242423;
   color: #fafafa;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  color: #1b2e5d;
+}
+
+.covid {
+  color: #eb5064;
+}
+
+.heroText {
+  width: 700px;
+  margin-left: 200px;
+}
+.heroText h4 {
+  line-height: 10px;
+}
+
+.heroImg {
+  width: 700px;
+  margin-left: auto;
+}
+
+.heroImg img {
+  max-width: 100%;
 }
 
 .main {
@@ -71,6 +107,9 @@ hr {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+}
+.faq ul {
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
