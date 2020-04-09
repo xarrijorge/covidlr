@@ -5,9 +5,9 @@ import StayIn from '../images/staying_in_i80u.svg'
 export default () => (
   <div className="header">
     <div className="heroText">
-      <h1>
+      <h1 className="heroTitle">
         Let's work together to stop the spread of
-        <span className="covid">COVID-19</span>
+        <span className="covid"> COVID-19</span>
       </h1>
       <h4>Stay home, stay safe.</h4>
       <h4>Keep yourself quarantine</h4>
@@ -15,6 +15,5 @@ export default () => (
     <div className="heroImg">
       <img src={StayIn} alt="" />
     </div>
-    <QuickFacts />
   </div>
 )
