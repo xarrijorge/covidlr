@@ -20,6 +20,7 @@ function App() {
       />
       <main className="main">
         <QuuickFacts />
+        <hr />
         <div className="subMain">
           <Awareness />
           <Faq />

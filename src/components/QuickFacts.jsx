@@ -2,17 +2,19 @@ import React from 'react'
 
 export default () => (
   <aside className="quickFacts">
-    <h4 className="">Quick Facts</h4>
+    <h4 className=" title">
+      Quick <br /> Facts
+    </h4>
     <div className="stats">
-      <div className="stat confirmedCases">
-        <h>1,517,196</h> <h6>Total Confirmed Cases</h6>
+      <div className="stat confirmed">
+        <h4 className="count">1,517,196</h4> <h6>Total Confirmed Cases</h6>
       </div>
       <div className="stat deceased">
-        <h5>88,433</h5>
+        <h4 className="count">88,433</h4>
         <h6>Total Deceased</h6>
       </div>
       <div className="stat recovered">
-        <h5>39,062</h5> <h6>Total Recovered</h6>
+        <h4 className="count">39,062</h4> <h6>Total Recovered</h6>
       </div>
     </div>
   </aside>
