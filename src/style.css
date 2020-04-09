@@ -1,6 +1,37 @@
-@import './App.css';
+body {
+  background-color: #242423;
+  color: #fafafa;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
 .quickFacts {
-  background-color: var(--electromagnet);
-  height: 40vh;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-evenly;
+}
+.quickFacts .stats {
+  display: flex;
+}
+.subMain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.awareness {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+  margin: 5px;
+}
+
+.card,
+li {
+  color: #242423;
 }

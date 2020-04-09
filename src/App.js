@@ -4,15 +4,11 @@ import Assessemnt from './components/Assessment'
 import Awareness from './components/Awareness'
 import Header from './components/Header'
 import QuuickFacts from './components/QuickFacts'
+import Faq from './components/Faq'
 
+import 'materialize-css' // It installs the JS asset only
+import 'materialize-css/dist/css/materialize.min.css'
 import './style.css'
-
-const Main = () => (
-  <div className="col-8 row">
-    <Awareness />
-    <Assessemnt />
-  </div>
-)
 
 function App() {
   return (
@@ -22,9 +18,12 @@ function App() {
         role="navigation"
         aria-label="main navigation"
       />
-      <main className="row wide">
+      <main className="main">
         <QuuickFacts />
-        <Main />
+        <div className="subMain">
+          <Awareness />
+          <Faq />
+        </div>
       </main>
     </Fragment>
   )
