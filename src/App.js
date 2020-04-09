@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+
+import Assessemnt from './components/Assessment'
+import Awareness from './components/Awareness'
+import Header from './components/Header'
+import QuuickFacts from './components/QuickFacts'
+
+import './App.css'
+
+const Main = () => (
+  <Fragment>
+    <Awareness />
+    <Assessemnt />
+  </Fragment>
+)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment className="App">
+      <Header />
+      <QuuickFacts />
+      <Awareness />
+      <Assessemnt />
+    </Fragment>
+  )
 }
 
-export default App;
+export default App
