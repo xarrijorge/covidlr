@@ -18,21 +18,40 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Assessemnt />
       <main className="main">
         <QuickFacts />
         <hr />
-        <div className="transmission">
-          <div>
-            <img src={Objects} alt="" />
-            <h6>Contaminated Objects and Substances</h6>
-          </div>
-          <div>
-            <img src={AirTramission} alt="" />
-            <h6>Air Transmission of Droplets</h6>
-          </div>
-          <div>
-            <img src={Human2Human} alt="" />
-            <h6>Transmission Among Humans</h6>
+        <div className="section2">
+          <h3>How it spreads</h3>
+          <div className="transmission">
+            <div>
+              <img src={Objects} alt="" />
+              <h5>Contaminated Objects</h5>
+              <p>
+                Currently, your respondents have to complete your typeform in
+                one sitting. ... The reason is that the action of clicking on
+                the “Submit” button confirms that they consent to share{' '}
+              </p>
+            </div>
+            <div>
+              <img src={AirTramission} alt="" />
+              <h5>Air Transmission of Droplets</h5>
+              <p>
+                Currently, your respondents have to complete your typeform in
+                one sitting. ... The reason is that the action of clicking on
+                the “Submit” button confirms that they consent to share{' '}
+              </p>
+            </div>
+            <div>
+              <img src={Human2Human} alt="" />
+              <h5>Transmission Among Humans</h5>
+              <p>
+                Currently, your respondents have to complete your typeform in
+                one sitting. ... The reason is that the action of clicking on
+                the “Submit” button confirms that they consent to share{' '}
+              </p>
+            </div>
           </div>
         </div>
         <div className="subMain">
